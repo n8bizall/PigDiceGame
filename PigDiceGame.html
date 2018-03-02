@@ -18,13 +18,17 @@
                       score.push(x);
                       $("#lbl").text(score);
                     }else{
-                       $("#lbl").add(score);
-                       $("#lbl").text(score);
+                            for( i = 0; i < score.length;i++){
+                                myTotal += score[i];
+                            }
+                            $("#lbl").text(myTotal);
+                           myTotal = [];
+                           $("#lbl").text(myTotal);
                     }
-
+ 
                 })
             })
-            
+
 		</script>
 </head>
 <body >
