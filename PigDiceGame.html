@@ -21,9 +21,9 @@
                             for( i = 0; i < score.length;i++){
                                 myTotal += score[i];
                             }
-                            $("#lbl").text(myTotal);
-                           myTotal = [];
-                           $("#lbl").text(myTotal);
+                            $("#lbl").text("Your score is :" + myTotal);
+                            score = [];
+                      
                     }
  
                 })
@@ -35,7 +35,7 @@
     <h1>The Pig Dice Game</h1>
     <p></p>
     <h3>Directions</h3>
-    <p>Click the button to until your score appears!</p>
+    <p>Click the button until your score appears!</p>
     <button id="roll">Play Pig Dice</button>
     <label id="lbl" type="number"></label>
 </body>
