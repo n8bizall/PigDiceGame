@@ -18,13 +18,13 @@
                       score.push(x);
                       $("#lbl").text(score);
                     }else{
-                       $("#lbl").
-                     }
-                    })
+                       $("#lbl").add(score);
+                       $("#lbl").text(score);
+                    }
 
-			function Main(){
-
-			}
+                })
+            })
+            
 		</script>
 </head>
 <body >
@@ -35,6 +35,5 @@
     <button id="roll">Play Pig Dice</button>
     <label id="lbl" type="number"></label>
 </body>
-=======
-<!doctype html>                       
-<html lang="en">
+</html>
+
